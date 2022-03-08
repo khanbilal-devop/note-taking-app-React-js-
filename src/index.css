@@ -11,3 +11,173 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.note-body {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.new .note-body {
+  justify-content: space-evenly;
+
+}
+
+.note {
+  border-radius: 10px;
+  background-color: #dcf388;
+  height: 35vh;
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 250px;
+}
+
+.note-body input {
+  border: none;
+  background-color: rgb(159, 233, 233);
+  width: 100%;
+
+}
+
+.note.new {
+  background-color: rgb(159, 233, 233);
+}
+
+textarea {
+  border: none;
+  background-color: rgb(159, 233, 233);
+  resize: none;
+  width: 100%;
+}
+
+
+.btn {
+  border: none;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
+ .btn:hover {
+  cursor: pointer;
+  background: #fff;
+}
+
+.note-body input:focus {
+  outline: none;
+}
+
+.delete-icon:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.error {
+  /* outline: none; */
+  border: 1px solid #dc3545;
+}
+
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  font-size: 80%;
+  color: #dc3545;
+  border-radius: 10px;
+}
+
+
+.d-block {
+  display: block !important;
+}
+
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.note-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.container {
+  max-width: 960px;
+  padding: 15px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.dark-mode{
+  background-color: black !important;
+}
+
+.dark-mode-text {
+  color: white !important ;
+}
+
+.title-text {
+  text-align: center;
+  font-weight: 500;
+}
+
+.note-text {
+  font-size: 15px;
+  font-weight: 300;
+  height: 9rem;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #c3c5bd;;
+  padding-bottom: 0.5em;
+  margin-bottom: 10px;
+}
+
+.header-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-header {
+  height: 2rem;
+  width: 5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #c3c5bd;
+}
+
+.btn-header:hover{
+  cursor: pointer;
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  background-color: #c3c5bd;
+  padding: 0.2em 0;
+  border-radius: 0.5em;
+}
+
+.search-bar input{
+  width: 100%;
+  border: none;
+  background-color: #c3c5bd;
+}
+
+
+.search-bar input:focus{
+  outline: none;
+}
